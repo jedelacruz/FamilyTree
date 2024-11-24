@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        :root {
+            --card_width: 350px;
+            --row_increment: 10px;
+            --card_border_radius: 16px;
+            --card_small: 26;
+            --card_medium: 33;
+            --card_large: 45;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .pin_container {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--card_width));
+            grid-auto-rows: var(--row_increment);
+            justify-content: center;
+            padding: 50px 0px;
+
+        }
+
+        .card {
+            padding: 0;
+            margin: 15px 10px;
+            border-radius: var(--card_border_radius);
+        }
+
+        .card_small {
+            grid-row-end: span var(--card_small);
+        }
+
+        .card_medium {
+            grid-row-end: span var(--card_medium);
+        }
+
+        .card_large {
+            grid-row-end: span var(--card_large);
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+    
+        }
+        .container-box{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 30px;
+        }
+        .fam-h{
+            text-align: center;
+            padding-top: 50px;
+        }
+        .card img{
+            width: 100%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-box">
+            <p>Jan Emmanuel A. Dela Cruz</p>
+            <p>BSIT 1 - 2</p>
+        </div>
+        <div class="container-box">
+            <p>Filipinohiya</p>
+            <p>Sir Lloyd Domingo</p>
+        </div>
+    </div>
+    <h1 class="fam-h">My Family Tree</h1>
+    <div class="pin_container">
+        <div class="card card_small">
+            <img src="img1.jpg" alt="">
+        </div>
+        <div class="card card_medium">
+            <img src="img2.jpg" alt="">
+        </div>
+        <div class="card card_large">
+            <img src="img6.jpg" alt="">
+        </div>
+        <div class="card card_medium">
+            <img src="img4.jpg" alt="">
+        </div>
+        <div class="card card_small">
+            <img src="img5.jpg" alt="">
+        </div>
+        <div class="card card_large">
+            <img src="img3.jpg" alt="">
+        </div>
+        <div class="card card_medium">
+            <img src="img7.jpg" alt="">
+        </div>
+        <div class="card card_small">
+            <img src="img8.jpg" alt="">
+        </div>
+        <div class="card card_medium">
+            <img src="img9.jpg" alt="">
+        </div>
+        <div class="card card_small">
+            <img src="img10.jpg" alt="">
+        </div>
+        <div class="card card_medium">
+            <img src="img11.jpg" alt="">
+        </div>
+        <div class="card card_large">
+            <img src="img12.jpg" alt="">
+        </div>
+        <div class="card card_medium">
+            <img src="img13.jpg" alt="">
+        </div>
+        <div class="card card_small">
+            <img src="img14.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
